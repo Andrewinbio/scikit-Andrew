@@ -226,6 +226,7 @@ class RFE(SelectorMixin, MetaEstimatorMixin, BaseEstimator):
         # step_score is not exposed to users
         # and is used when implementing RFECV
         # self.scores_ will not be calculated when calling _fit through fit
+        
 
         tags = self._get_tags()
         X, y = self._validate_data(
